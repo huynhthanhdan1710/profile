@@ -1,16 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('Clone') {
+        stage('Updated') {
             steps {
                 git 'https://github.com/huynhthanhdan1710/profile.git'
             }
         }
-        stage('Clone Repo') {
+        stage('Pull Source') {
             steps {
                 script {
                     sshScript = '''
-                        ssh root@103.9.77.138 'df -h'
+                        ssh root@123.30.140.234 'cd /home/myid/domains/dan.id.vn/public_html && git pull https://github.com/huynhthanhdan1710/profile.git'
                     '''
                     sh sshScript
                 }
