@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Clone Repo')
          steps {
-            ssh root@123.30.140.234 'df -h'
+            ssh root@103.9.77.138 'df -h'
          }
     }
 }
