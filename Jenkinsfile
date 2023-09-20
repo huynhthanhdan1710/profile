@@ -10,7 +10,7 @@ pipeline {
             steps {
                 script {
                     sshScript = '''
-                        ssh root@123.30.140.234 'cd /home/myid/domains/dan.id.vn/public_html && git pull https://github.com/huynhthanhdan1710/profile.git'
+                        ssh root@123.30.140.234 -p 2202 'cd /home/myid/domains/dan.id.vn/public_html && git pull https://github.com/huynhthanhdan1710/profile.git'
                     '''
                     sh sshScript
                 }
