@@ -13,7 +13,7 @@ if(empty($_SESSION['id']))
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - Dan Admin </title>
+  <title>Dan Admin </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
