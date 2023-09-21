@@ -3,7 +3,7 @@ $connection = mysqli_connect('localhost','danpro_danid','2a7B8hXDkD','danpro_dan
 mysqli_set_charset($connection,'utf8');
 $username = $_POST['username'];
 $password =$_POST['password'];
-$sql ="select * from    
+$sql ="select * from  taikhoan  
 where username ='$username' and password ='$password'";
 $result = mysqli_query($connection,$sql);
 $number_row = mysqli_num_rows($result);
