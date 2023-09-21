@@ -2,7 +2,7 @@
 $connection = mysqli_connect('localhost','danpro_danid','2a7B8hXDkD','danpro_danid');
 mysqli_set_charset($connection,'utf8');
 $username = $_POST['username'];
-$password =$_POST['pass'];
+$password =$_POST['password'];
 $sql ="select * from    
 where username ='$username' and password ='$password'";
 $result = mysqli_query($connection,$sql);
